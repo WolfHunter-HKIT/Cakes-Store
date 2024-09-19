@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Caveat%20Brush:700|Roboto:400"); /* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"); /* Inria Sans */
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap"); /* Caveat Brush */
+
+/* Body Fonts & Color codes */
+body {
+  --text: #270001;
+  --background: #ffffff;
+  --primary: #ffcfbc;
+  --secondary: #800080;
+  --accent: #ffe6ea;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: "Roboto";
+  font-weight: 400;
+  color: var(--text);
+}
+
+/* Header Fonts */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Inria Sans";
+  font-weight: 700;
+}
+
+/* Text sizes */
+html {
+  font-size: 100%;
+} /* 16px */
+h1 {
+  font-size: 4.521rem; /* 72.32px */
+}
+h2 {
+  font-size: 3.197rem; /* 51.2px */
+}
+h3 {
+  font-size: 2.261rem; /* 36.16px */
+}
+h4 {
+  font-size: 1.599rem; /* 25.6px */
+}
+h5 {
+  font-size: 1.131rem; /* 18.08px */
+}
+small {
+  font-size: 0.566rem; /* 9.12px */
+}
+
+/* ----------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* Navigation bar*/
+nav {
+  background-color: var(--primary);
+  display: flex;
+  gap: 1vw;
+  flex-direction: row;
+  justify-content: space-around;
+  vertical-align: middle;
+  height: 7vh;
+  margin: auto;
+}
+
+#logo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+#logoName {
+  font-size: medium;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+#navigation {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  vertical-align: middle;
+  width: 20vw;
+  margin: 0;
+  padding: 0;
+}
+
+#navigation a {
+  height: 3vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: larger;
+  color: inherit;
+}
+
+#searchbar {
+  flex-grow: 0;
+  width: 200px;
+  height: 4vh;
+  margin-top: auto;
+  margin-bottom: auto;
+  border-radius: 5px;
+  border: 2px solid var(--secondary);
+}
+
+#navMisc {
+  flex-grow: 1;
+}
+
+/* Welcome Sign */
+header:nth-of-type(1) section {
+  background: 
+    /* url(/src/media/mainPage\ cake.jpg) */  /* FIX!! */ 
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5)
+    )
+    no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40vh;
+  padding: 0 5vw;
+}
+
+h1 {
+  font-family: "Caveat Brush", "Roboto";
+  margin: 0;
+  margin-top: 10%;
+}
+
+header:nth-of-type(1) section button {
+  width: 150px;
+  height: 30px;
+}
