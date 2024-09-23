@@ -117,29 +117,69 @@ nav {
 
 /* Welcome Sign */
 header:nth-of-type(1) section {
-  background: 
-    /* url(/src/media/mainPage\ cake.jpg) */  /* FIX!! */ 
-    linear-gradient(
+  background: url(/src/media/mainPage\ cake.jpg) /* FIX!! */
+    /* linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.5)
-    )
+    ) */
     no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 40vh;
+  justify-content: space-around;
+  height: 700px;
   padding: 0 5vw;
+}
+
+header:nth-of-type(1) section article {
+  margin-top: 250px;
+  margin-right: auto;
+  width: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
   font-family: "Caveat Brush", "Roboto";
   margin: 0;
+  margin-right: auto;
+  width: auto;
   margin-top: 10%;
 }
 
+header:nth-of-type(1) article small {
+  font-size: 22px;
+  width: 500px;
+}
+
 header:nth-of-type(1) section button {
-  width: 150px;
-  height: 30px;
+  width: 200px;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--secondary);
+  color: white;
+  font-size: 20px;
+}
+
+/* Article 1 (Discover) */
+main section:nth-of-type(1) {
+  display: flex;
+  flex-direction: row;
+  margin: 70px 5vw 0;
+  width: auto;
+}
+
+main section:nth-of-type(1) h2 {
+  flex: 40%;
+}
+
+main section:nth-of-type(1) table {
+  flex: 60%;
+}
+
+main video:nth-last-of-type(1) {
+  margin: 0 5vw;
+  width: 90vw;
 }
