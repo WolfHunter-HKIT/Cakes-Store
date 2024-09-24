@@ -61,7 +61,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   vertical-align: middle;
-  height: 7vh;
+  height: 10vh;
   margin: auto;
 }
 
@@ -83,7 +83,7 @@ nav {
   flex-grow: 2;
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 40px;
   justify-content: center;
   vertical-align: middle;
   width: 20vw;
@@ -103,12 +103,14 @@ nav {
 
 #searchbar {
   flex-grow: 0;
+  font-size: 15px;
   width: 200px;
-  height: 4vh;
+  height: 6vh;
   margin-top: auto;
   margin-bottom: auto;
   border-radius: 5px;
-  border: 2px solid var(--secondary);
+  border: 1px solid black;
+  padding-left: 10px;
 }
 
 #navMisc {
@@ -117,13 +119,7 @@ nav {
 
 /* Welcome Sign */
 header:nth-of-type(1) section {
-  background: url(/src/media/mainPage\ cake.jpg) /* FIX!! */
-    /* linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.5)
-    ) */
-    no-repeat;
+  background: url(/src/media/mainPage\ cake.png) no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -163,23 +159,143 @@ header:nth-of-type(1) section button {
   font-size: 20px;
 }
 
-/* Article 1 (Discover) */
+/* Section 1 (Discover) */
 main section:nth-of-type(1) {
   display: flex;
   flex-direction: row;
-  margin: 70px 5vw 0;
+  margin: 70px 5vw;
   width: auto;
 }
 
 main section:nth-of-type(1) h2 {
-  flex: 40%;
+  margin: 0;
+  flex: 45%;
+  font-size: 75px;
+  line-height: 1.1;
 }
 
 main section:nth-of-type(1) table {
-  flex: 60%;
+  flex: 55%;
 }
 
 main video:nth-last-of-type(1) {
   margin: 0 5vw;
   width: 90vw;
+}
+
+/* Section 2 (Cakes & Decor) */
+main section:nth-of-type(2) table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 5vw 0;
+  width: auto;
+}
+
+main section:nth-of-type(2) tbody tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section:nth-of-type(2) table h4 {
+  margin: 0;
+}
+
+/*- Cards -*/
+main section:nth-of-type(2) tbody tr td {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  border: 2px solid #ffcfbc2e;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+main section:nth-of-type(2) tbody tr td img:nth-of-type(1) {
+  width: 100%;
+}
+
+main section:nth-of-type(2) tbody tr td h4,
+main section:nth-of-type(2) tbody tr td p {
+  padding: 0 20px;
+}
+
+main section:nth-of-type(2) tbody tr td button {
+  display: flex;
+  justify-content: left;
+  font-size: 17px;
+  background-color: white;
+  border: 0;
+  height: 30px;
+  width: 100px;
+  padding: 0 20px;
+  color: var(--text);
+}
+
+main section:nth-of-type(2) tbody tr td button:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+main section:nth-of-type(2) tbody tr td button img {
+  width: 20px !important;
+}
+
+/* Section 1, Article 1 */
+main section:nth-of-type(2) article:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 3vh;
+  background-color: var(--accent);
+  margin-top: 70px;
+  padding: 9vh 30vw;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) h2,
+main section:nth-of-type(2) article:nth-of-type(1) h3 {
+  margin: 0;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) form input {
+  font-size: 17px;
+  height: 40px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) form button {
+  background-color: var(--secondary);
+  color: white;
+  font-weight: 100;
+  font-size: 16px;
+  letter-spacing: 1px;
+  height: 42px;
+  width: 125px;
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+}
+
+/* Section 1, Article 2 */
+main section:nth-of-type(2) article:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5vw;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) p {
+  font-size: 20px;
 }
